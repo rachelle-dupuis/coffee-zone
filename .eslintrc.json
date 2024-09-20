@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@stylistic/recommended-extends",
+    "plugin:tailwindcss/recommended",
+    "next/core-web-vitals"
+  ],
+  "plugins": [
+    "react-compiler"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "react/no-unescaped-entities": "off",
+    "react/no-unstable-nested-components": "warn",
+    "@stylistic/indent": ["error", 4 ],
+    "@stylistic/jsx-indent-props": ["error", 4 ],
+    "@stylistic/jsx-wrap-multilines": "error",
+    "@stylistic/padded-blocks": "off",
+    "@stylistic/no-extra-semi": "error",
+    "@stylistic/semi": ["error", "always"],
+    "@stylistic/brace-style": ["error", "1tbs"],
+    "@stylistic/jsx-one-expression-per-line": "off",
+    "@typescript-eslint/no-floating-promises": "error",
+    "@typescript-eslint/no-misused-promises": "error",
+    "react-compiler/react-compiler": "error",
+    "brace-style": ["error", "stroustrup"],
+    "@next/next/no-img-element": "off"
+  }
+}
+
+// For documentation of @stylistic rules, see https://eslint.style/rules
