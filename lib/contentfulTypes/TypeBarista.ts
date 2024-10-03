@@ -3,7 +3,6 @@ import type { ChainModifiers, Entry, EntryFieldTypes, EntrySkeletonType, LocaleC
 export interface TypeBaristaFields {
     firstName?: EntryFieldTypes.Symbol
     lastName?: EntryFieldTypes.Symbol
-    favouriteDrink?: EntryFieldTypes.EntryLink<EntrySkeletonType>
 }
 
 export type TypeBaristaSkeleton = EntrySkeletonType<TypeBaristaFields, 'barista'>;
